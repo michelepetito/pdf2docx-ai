@@ -1,0 +1,272 @@
+{
+  "date": "2026-11-15",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "runtime": "Ollama 0.40.16",
+  "endpoint": "http://127.0.0.1:18499",
+  "model": "minicpm-ocr:latest",
+  "weights": [
+    {
+      "name": "MiniCPM-OCR-1_0-Q8_0.gguf",
+      "repository": "openbmb/MiniCPM-OCR-1.0-gguf",
+      "revision": "0133ad8db635210441a55dcf421e25bfb9915142",
+      "size": 811598432,
+      "sha256": "791486a476bdacb48acb3f31aa3a18dbb5be87e723a4074bcd13a37d61c852e2"
+    },
+    {
+      "name": "mmproj-model-f16-4x.gguf",
+      "repository": "openbmb/MiniCPM-OCR-1.0-gguf",
+      "revision": "0133ad8db635210441a55dcf421e25bfb9915142",
+      "size": 901017536,
+      "sha256": "ceed82261b3b1380c3165f8b37c10117a50093be1362cbfeeb692fa036444682"
+    },
+    {
+      "name": "dspark-MiniCPM-OCR-1_0-Q8_0.gguf",
+      "repository": "openbmb/MiniCPM-OCR-1.0-DSpark-gguf",
+      "revision": "cab493a5a26516a1c4c6e07c73b4470ff854a898",
+      "size": 327293024,
+      "sha256": "fd8f64bb62cf5a5c6b4c0999bfa58f64453690c9f75f1124ab613dfb44a822da"
+    }
+  ],
+  "all_weight_hashes_verified": true,
+  "acceleration": {
+    "backend": "Metal",
+    "device": "Apple M5",
+    "target_layers_on_gpu": "25/25",
+    "draft_layers_on_gpu": "6/6",
+    "dspark_observed": true,
+    "evidence": "models/ollama/server.log"
+  },
+  "tests": {
+    "passed": 77,
+    "skipped": 0,
+    "real_backends": [
+      "minicpm",
+      "vision"
+    ]
+  },
+  "runs": [
+    {
+      "fixture": "scan_en",
+      "wall_seconds": 6.771347125060856,
+      "text": "Scanned document\nThe invoice is ready.\nTotal 12345 euros.",
+      "text_accuracy": {
+        "cer": 0.0,
+        "wer": 0.0,
+        "reference_characters": 57,
+        "reference_words": 9,
+        "normalization": "whitespace only"
+      },
+      "performance": {
+        "total_seconds": 6.76766087510623,
+        "seconds_per_page": 6.767661000136286,
+        "ocr_seconds": 5.749327250057831,
+        "reconstruction_seconds": 0.020746750058606267,
+        "peak_rss_mb": 224.453125,
+        "memory_measurement": "sampled50ms process only; children unavailable; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 1,
+        "editable_characters": 57,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      },
+      "warnings": [
+        "Pagina 1: MiniCPM output has region-level coordinates only; confidence is unavailable.",
+        "PDF ricercabile supplementare: testo invisibile, geometria approssimata; non equivale al DOCX."
+      ],
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico.",
+        "pages": [
+          {
+            "page": 1,
+            "ssim": 0.9747580669809067,
+            "mean_absolute_pixel_error": 0.00627251981829121,
+            "changed_pixel_fraction": 0.009223948159861097,
+            "alignment_shift_px": [
+              -4,
+              -4
+            ],
+            "original_size_pt": [
+              595.0,
+              842.0
+            ],
+            "rendered_size_pt": [
+              595.303955078125,
+              841.8897705078125
+            ],
+            "matched_text_blocks": 0,
+            "mean_block_displacement_pt": null,
+            "original_detected_tables": 0,
+            "rendered_detected_tables": 0,
+            "table_detection_changed": false
+          }
+        ]
+      }
+    },
+    {
+      "fixture": "scan_it",
+      "wall_seconds": 4.584240124793723,
+      "text": "Documento scannerizzato\nLa città è più bella.\nTotale 12345 euro.",
+      "text_accuracy": {
+        "cer": 0.0,
+        "wer": 0.0,
+        "reference_characters": 64,
+        "reference_words": 10,
+        "normalization": "whitespace only"
+      },
+      "performance": {
+        "total_seconds": 4.580147667089477,
+        "seconds_per_page": 4.580147791886702,
+        "ocr_seconds": 3.834756375057623,
+        "reconstruction_seconds": 0.010379459010437131,
+        "peak_rss_mb": 331.265625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 1,
+        "editable_characters": 64,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      },
+      "warnings": [
+        "Pagina 1: MiniCPM output has region-level coordinates only; confidence is unavailable.",
+        "Pagina 1: MiniCPM documents Chinese/English support; Italian quality needs separate validation.",
+        "PDF ricercabile supplementare: testo invisibile, geometria approssimata; non equivale al DOCX."
+      ],
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico.",
+        "pages": [
+          {
+            "page": 1,
+            "ssim": 0.9725535045734008,
+            "mean_absolute_pixel_error": 0.006865434213040728,
+            "changed_pixel_fraction": 0.00998873489804566,
+            "alignment_shift_px": [
+              -4,
+              -4
+            ],
+            "original_size_pt": [
+              595.0,
+              842.0
+            ],
+            "rendered_size_pt": [
+              595.303955078125,
+              841.8897705078125
+            ],
+            "matched_text_blocks": 0,
+            "mean_block_displacement_pt": null,
+            "original_detected_tables": 0,
+            "rendered_detected_tables": 0,
+            "table_detection_changed": false
+          }
+        ]
+      }
+    },
+    {
+      "fixture": "mixed",
+      "wall_seconds": 4.659260666929185,
+      "text": "Intestazione nativa 123\nRegione scannerizzata 456",
+      "text_accuracy": null,
+      "performance": {
+        "total_seconds": 4.648407666943967,
+        "seconds_per_page": 4.648407708853483,
+        "ocr_seconds": 3.9209930000361055,
+        "reconstruction_seconds": 0.01615070807747543,
+        "peak_rss_mb": 311.1875,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 2,
+        "editable_characters": 49,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      },
+      "warnings": [
+        "Pagina 1: MiniCPM output has region-level coordinates only; confidence is unavailable.",
+        "Pagina 1: MiniCPM documents Chinese/English support; Italian quality needs separate validation.",
+        "PDF ricercabile supplementare: testo invisibile, geometria approssimata; non equivale al DOCX."
+      ],
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico.",
+        "pages": [
+          {
+            "page": 1,
+            "ssim": 0.9858988427250719,
+            "mean_absolute_pixel_error": 0.003790221469999548,
+            "changed_pixel_fraction": 0.0060676526214615695,
+            "alignment_shift_px": [
+              0,
+              0
+            ],
+            "original_size_pt": [
+              595.0,
+              842.0
+            ],
+            "rendered_size_pt": [
+              595.303955078125,
+              841.8897705078125
+            ],
+            "matched_text_blocks": 1,
+            "mean_block_displacement_pt": 3.122359771537213,
+            "original_detected_tables": 0,
+            "rendered_detected_tables": 0,
+            "table_detection_changed": false
+          }
+        ]
+      }
+    }
+  ],
+  "web_verification": {
+    "job_id": "aae0602aced94a3ab6bb86f8448bf122",
+    "status": "complete",
+    "engine": "minicpm",
+    "text": "Documento scannerizzato\nLa città è più bella.\nTotale 12345 euro.",
+    "text_accuracy": {
+      "cer": 0.0,
+      "wer": 0.0,
+      "reference_characters": 64,
+      "reference_words": 10,
+      "normalization": "whitespace only"
+    },
+    "gui_health_endpoint_status": 404
+  }
+}

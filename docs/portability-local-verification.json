@@ -1,0 +1,60 @@
+{
+  "version": "0.3.1",
+  "platform": "macOS-26.7.1-arm64-arm-64bit",
+  "python": "3.12.14",
+  "bootstrap_environment": ".venv-reproduce",
+  "pip_check": "passed",
+  "shared_application_constraints_sha256": "fb8bddc2e52533a372098f4a9e277cb88625c2c1ca98db25c534e57046674598",
+  "readme_commands_match_between_languages": true,
+  "fresh_environment_native_conversion": {
+    "visual_status": "measured",
+    "ssim": 0.9961016348675238,
+    "edit_probe": {
+      "status": "measured",
+      "outcome": "reflow_measured",
+      "original_unchanged": true,
+      "objects_preserved": true,
+      "missing_baseline_characters": 0
+    }
+  },
+  "libraries": {
+    "PyMuPDF": "1.26.7",
+    "python-docx": "1.2.0",
+    "numpy": "2.3.5",
+    "Pillow": "13.0.0",
+    "lxml": "6.1.1",
+    "RapidFuzz": "3.14.6"
+  },
+  "native_system_tests": "macOS ARM64 executed locally; other platforms verified separately by GitHub Actions",
+  "historical_reports": "0.3.0 results preserved unchanged; this is a 0.3.1 portability preparation",
+  "full_tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "179",
+    "time": "102.835",
+    "timestamp": "2026-11-22T13:02:52.339029+01:00",
+    "hostname": "MacBook-Pro-di-jacklondon.local"
+  },
+  "first_local_core_tests": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "151",
+    "time": "62.611",
+    "timestamp": "2026-11-22T12:55:54.679376+01:00",
+    "hostname": "MacBook-Pro-di-jacklondon.local"
+  },
+  "linux_fontconfig_fix": "Recognize explicit Liberation/Carlito metric aliases; Linux CI installs the same font prerequisites as the README. Tests reject unrelated font files as reference data.",
+  "tested_code_commit": "4f55fa990403651e4bbeb7cb9792e958968c9c6d",
+  "historical_first_ci": {
+    "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45019974369",
+    "conclusion": "failure",
+    "reason": "Linux metric-family aliases were not recognized; fixed after inspecting both Linux logs."
+  },
+  "ci_verification": "portability-ci-verification.json",
+  "ci_run_url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649",
+  "ci_conclusion": "success"
+}

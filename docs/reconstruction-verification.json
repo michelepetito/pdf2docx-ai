@@ -1,0 +1,57 @@
+{
+  "verified_utc": "2026-11-22T06:25:39.722937+00:00",
+  "version": "0.2.0",
+  "source_code_sha256": "01aab88600528661330ae9a891e85dd2aa5d0ad744dfb3bc97bcf3397b6fd678",
+  "baseline_code_sha256": "0a13b613107dd2bb7262b824047d1330c8a0706bc4750362f7e39423d0ea98fe",
+  "tests": {
+    "tests": 148,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "documents_measured": 26,
+  "source_pages": 61,
+  "rendered_pages": 77,
+  "groups": {
+    "development": 7,
+    "holdout": 3,
+    "holdout-public": 2,
+    "regression-simple": 14
+  },
+  "renderer": {
+    "path": "/Users/jacklondon/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+    "wrapper_sha256": "81c7db1c6dbcdd606d95abef337b4529aeda6a4fa1cf23a5a567f9c5655c8b66",
+    "version": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5"
+  },
+  "wheel_sha256": "12c001e76c811d2a8ced15ef29b486313940875c59ca6c6d18fbda9a339ca5f1",
+  "wheel_source_files_checked": 47,
+  "pip_check": "No broken requirements found",
+  "wheel_cli_smoke_ssim": 0.9961016348675238,
+  "web_minicpm": {
+    "status": "complete",
+    "cer": 0.0,
+    "wer": 0.0,
+    "ssim": 0.9841227687730943,
+    "browser_upload": "not completed: debugger/native-window unavailable; API and downloads verified"
+  },
+  "cv": {
+    "pages": 2,
+    "ssim_before": 0.7034895586667232,
+    "ssim_after": 0.9894862755486087,
+    "median_position_error_before_pt": 46.75010696480533,
+    "median_position_error_after_pt": 0.0,
+    "cer": 0.0,
+    "wer": 0.0,
+    "final_docx": "/Users/jacklondon/Documents/ChatGPT/Codex/pdf2docx-ai/examples/output/reconstruction-review/deliverables/europass-geometric.docx",
+    "visual_review": "both final PNG pages inspected"
+  },
+  "material_limits": [
+    "PLOS 14->26 pages, SSIM below baseline",
+    "Eurostat 8->12 pages, SSIM below baseline",
+    "invoice cell borders simplified; SSIM below .98",
+    "rotated text reconstructed as readable horizontal flow",
+    "long public-text exact CER/WER unavailable at configured computational bound",
+    "Microsoft Word renderer not verified",
+    "first heldout evidence preserved; later results are revalidation after general fixes"
+  ]
+}

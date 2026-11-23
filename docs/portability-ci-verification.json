@@ -1,0 +1,160 @@
+{
+  "repository": "https://github.com/cryptotrade3/pdf2docx-ai",
+  "version": "0.3.1",
+  "run_id": 45020707649,
+  "run_url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649",
+  "tested_commit": "4f55fa990403651e4bbeb7cb9792e958968c9c6d",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "Linux · LibreOffice and Tesseract",
+      "databaseId": 137202736139,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736139"
+    },
+    {
+      "name": "Core · ubuntu-24.04",
+      "databaseId": 137202736481,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736481"
+    },
+    {
+      "name": "Core · windows-2025",
+      "databaseId": 137202736501,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736501"
+    },
+    {
+      "name": "Core · macos-15",
+      "databaseId": 137202736534,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736534"
+    },
+    {
+      "name": "Core · macos-15-intel",
+      "databaseId": 137202736572,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736572"
+    },
+    {
+      "name": "Core · ubuntu-24.04-arm",
+      "databaseId": 137202736593,
+      "conclusion": "success",
+      "url": "https://github.com/cryptotrade3/pdf2docx-ai/actions/runs/45020707649/job/137202736593"
+    }
+  ],
+  "source_tree_sha256": "f396bd32e1625307f86fc83d61bd851e02d0559b7813bd974acd5d597e230114",
+  "core_junit": [
+    {
+      "platform_artifact": "test-results-macos-15",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "153",
+          "time": "8.149",
+          "timestamp": "2026-11-22T12:08:14.831162+00:00",
+          "hostname": "dsm12-be221-5c6e79df-a6fb-4dc5-b207-33675c6fe9a0-4A7CD6E03F21.local"
+        }
+      ],
+      "sha256": "74c21221aab8ef81a341eaf74e72c456e2821f6f07710067fa5738e56deae102"
+    },
+    {
+      "platform_artifact": "test-results-macos-15-intel",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "153",
+          "time": "20.783",
+          "timestamp": "2026-11-22T12:08:31.492402+00:00",
+          "hostname": "iad01-dz248-4d42a621-b0e3-454b-9092-1d31c7ed062b-C6E0CD52D889.local"
+        }
+      ],
+      "sha256": "79bcd7e8c038847312544cb76a77a7dc44d49158cbc888fc2244f560ad352eae"
+    },
+    {
+      "platform_artifact": "test-results-ubuntu-24.04",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "153",
+          "time": "11.187",
+          "timestamp": "2026-11-22T12:08:38.671987+00:00",
+          "hostname": "ip-10-0-138-214"
+        }
+      ],
+      "sha256": "ae354e7c48cd4bbd7fc39a720d5a37a0e3d10a634669fbec419aafa1e1304b60"
+    },
+    {
+      "platform_artifact": "test-results-ubuntu-24.04-arm",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "153",
+          "time": "12.983",
+          "timestamp": "2026-11-22T12:09:06.243096+00:00",
+          "hostname": "runnervmnfvap"
+        }
+      ],
+      "sha256": "1c0590ce3457aee6a02efd3f7b6da25f9669e8aa9ad6ed62963a578dac535ec8"
+    },
+    {
+      "platform_artifact": "test-results-windows-2025",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "4",
+          "tests": "153",
+          "time": "13.309",
+          "timestamp": "2026-11-22T12:08:37.361710+00:00",
+          "hostname": "runnervmbpeip"
+        }
+      ],
+      "sha256": "c896c1e2a54f38a4d4aaa5ae3feebe116ba3d4039cfdb63dd6a8591e272447ae"
+    }
+  ],
+  "linux_real_render_ocr": {
+    "ci-native.quality": {
+      "engine": "not_needed",
+      "ssim": 0.9967108384341998,
+      "cer_primary": 0.0,
+      "edit_probe_status": "measured",
+      "sha256": "eba65f8d7aa1da1305b3820ae087e6e04f31408aeff1977d5abe4d0d6fe4250f"
+    },
+    "ci-scan.quality": {
+      "engine": "tesseract",
+      "ssim": 0.9765016893443469,
+      "cer_primary": 0.0,
+      "edit_probe_status": "not_requested",
+      "sha256": "01b26aff84d830570d692f0ae75001ef3b68be224583fbea43bd99360b7cac66"
+    }
+  },
+  "scope": "Real GitHub-hosted Linux x64/ARM64, macOS Intel/ARM64 and Windows x64 core tests; real Linux LibreOffice and Tesseract conversion. Optional font-dependent tests may skip where the required font is unavailable. VLM model weights were not downloaded by CI.",
+  "history": [
+    {
+      "run_id": 45019974369,
+      "conclusion": "failure",
+      "cause": "Linux metric aliases not recognized; corrected in FontResolver."
+    },
+    {
+      "run_id": 45020422035,
+      "conclusion": "failure",
+      "cause": "ARM runner lacked matching font prerequisites; installed documented fonts and made source-font test prerequisites explicit."
+    }
+  ],
+  "artifact_directory_gitignored": "examples/output/github-ci/45020707649"
+}

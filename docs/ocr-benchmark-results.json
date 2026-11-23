@@ -1,0 +1,79 @@
+{
+  "date": "2026-11-14",
+  "environment": {
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "engine": "vision",
+    "dpi": 180,
+    "conditions": "Real local Apple Vision, no mocks, resume=False, visual validation requested; first run includes Swift helper cache lookup"
+  },
+  "runs": [
+    {
+      "fixture": "scan_it",
+      "performance": {
+        "total_seconds": 0.9954248750582337,
+        "seconds_per_page": 0.9954250829759985,
+        "ocr_seconds": 0.2331611670088023,
+        "reconstruction_seconds": 0.017602750100195408,
+        "peak_rss_mb": 325.5625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "text_accuracy": {
+        "cer": 0.0,
+        "wer": 0.0,
+        "reference_characters": 64,
+        "reference_words": 10,
+        "normalization": "whitespace only"
+      },
+      "pages": 1,
+      "page_count_difference": 0,
+      "ssim": [
+        0.9784917661770592
+      ]
+    },
+    {
+      "fixture": "scan_en",
+      "performance": {
+        "total_seconds": 0.9094194169156253,
+        "seconds_per_page": 0.9094195840880275,
+        "ocr_seconds": 0.21625775005668402,
+        "reconstruction_seconds": 0.01245016697794199,
+        "peak_rss_mb": 414.390625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "text_accuracy": {
+        "cer": 0.0,
+        "wer": 0.0,
+        "reference_characters": 57,
+        "reference_words": 9,
+        "normalization": "whitespace only"
+      },
+      "pages": 1,
+      "page_count_difference": 0,
+      "ssim": [
+        0.9797045148222902
+      ]
+    },
+    {
+      "fixture": "mixed",
+      "performance": {
+        "total_seconds": 0.9283500420860946,
+        "seconds_per_page": 0.9283501249738038,
+        "ocr_seconds": 0.2437642919830978,
+        "reconstruction_seconds": 0.014830833999440074,
+        "peak_rss_mb": 440.421875,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "text_accuracy": null,
+      "pages": 1,
+      "page_count_difference": 0,
+      "ssim": [
+        0.9883657380318721
+      ]
+    }
+  ]
+}

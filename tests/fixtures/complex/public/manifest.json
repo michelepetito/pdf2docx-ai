@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "description": "Real public PDF publications reserved for holdout validation; separate from synthetic construction/tuning fixtures. No DOCX conversion quality claims are made by this source-preservation manifest.",
+  "created_on": "2026-11-17",
+  "split": "holdout-public",
+  "documents": [
+    {
+      "split": "holdout-public",
+      "origin": "real-public-publication",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_verified_on": "2026-11-17",
+      "conversion_evaluation_status": "not-run",
+      "public_source_only": true,
+      "id": "public_plos_typography_2020",
+      "path": "plos_typography_2020.pdf",
+      "title": "Ten simple rules for typographically appealing scientific texts",
+      "creators": [
+        "Lars Ole Schwen"
+      ],
+      "publisher": "PLOS Computational Biology",
+      "publication_date": "2020-12-31",
+      "source_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008458&type=printable",
+      "landing_url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008458",
+      "doi": "10.1371/journal.pcbi.1008458",
+      "license_evidence": {
+        "source": "official article copyright section and PDF page 1",
+        "page": 1,
+        "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008458",
+        "linked_license_version": "4.0"
+      },
+      "attribution": "Schwen LO (2020). Ten simple rules for typographically appealing scientific texts. PLoS Comput Biol 16(12): e1008458. https://doi.org/10.1371/journal.pcbi.1008458. Copyright 2020 Lars Ole Schwen. CC BY 4.0.",
+      "pages": 14,
+      "source_total_pages": 14,
+      "source_page_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "source_printed_page_labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "modifications": "None; byte-identical copy of the publisher PDF.",
+      "sha256": "8986f1c9fb505936a5df99a8a20a32190e1d1dd2b6b307aec1a5f87d60653a5a",
+      "source_sha256": "8986f1c9fb505936a5df99a8a20a32190e1d1dd2b6b307aec1a5f87d60653a5a",
+      "source_bytes": 3683195,
+      "bytes": 3683195,
+      "layout_features": [
+        "asymmetric first-page sidebar",
+        "figures and captions",
+        "typographic samples and mathematical symbols",
+        "tables in figures",
+        "references",
+        "headers and footers"
+      ],
+      "privacy_review": "Published research article; public author and bibliographic metadata, including professional contact information. No private individual records or CVs.",
+      "source_preservation_check": {
+        "dpi": 72,
+        "all_page_rasters_byte_equal": true,
+        "all_page_extracted_text_equal": true,
+        "all_page_font_resource_counts_equal": true,
+        "checked_pages": 14
+      }
+    },
+    {
+      "split": "holdout-public",
+      "origin": "real-public-publication",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_verified_on": "2026-11-17",
+      "conversion_evaluation_status": "not-run",
+      "public_source_only": true,
+      "id": "public_eurostat_economy_2025_excerpt",
+      "path": "eurostat_economy_2025_excerpt.pdf",
+      "title": "Key figures on Europe - 2025 edition (economy excerpt)",
+      "creators": [
+        "Eurostat",
+        "European Union"
+      ],
+      "publisher": "Publications Office of the European Union",
+      "publication_date": "2025-07-09",
+      "source_url": "https://ec.europa.eu/eurostat/documents/15216629/22447468/KS-01-25-003-EN-N.pdf/0b4b896a-57a9-3348-06d0-319c667b6b08?download=true&t=1761575729999&version=3.0",
+      "landing_url": "https://ec.europa.eu/eurostat/web/products-key-figures/w/ks-01-25-003",
+      "doi": "10.2785/0857421",
+      "license_evidence": {
+        "source": "source PDF copyright and reuse notice",
+        "page": 4,
+        "url": "https://ec.europa.eu/eurostat/documents/15216629/22447468/KS-01-25-003-EN-N.pdf/0b4b896a-57a9-3348-06d0-319c667b6b08?download=true&t=1761575729999&version=3.0"
+      },
+      "attribution": "European Union (2025). Key figures on Europe - 2025 edition. Eurostat, Publications Office of the European Union. https://doi.org/10.2785/0857421. Copyright European Union 2025. CC BY 4.0. Excerpt: original PDF pages 38, 39, 41-44, 46-47; page selection only.",
+      "pages": 8,
+      "source_total_pages": 84,
+      "source_page_numbers": [
+        38,
+        39,
+        41,
+        42,
+        43,
+        44,
+        46,
+        47
+      ],
+      "source_printed_page_labels": [
+        "36",
+        "37",
+        "39",
+        "40",
+        "41",
+        "42",
+        "44",
+        "45"
+      ],
+      "modifications": "Page selection only, retaining page contents and fonts. Original PDF pages 38, 39, 41-44, 46-47. PDF metadata describes excerpt.",
+      "excluded_content": "Map and administrative-boundary pages excluded: the source copyright notice lists EuroGeographics and OpenStreetMap as third-party rights holders.",
+      "sha256": "b51f637408dbf1597327ef4a4b096db9174edf84f5b8704b1dad29b8fd4992fa",
+      "source_sha256": "6a39b318af350a35520571b41d7ada3ca971dffc29492049b87b9e2152baf607",
+      "source_bytes": 11145558,
+      "bytes": 590923,
+      "layout_features": [
+        "two-column text",
+        "large headings",
+        "bubble chart",
+        "line charts",
+        "dense labelled bar charts",
+        "illustrations",
+        "footnotes",
+        "headers and footers"
+      ],
+      "privacy_review": "Official statistical publication containing aggregate economic data; no private individual records.",
+      "source_preservation_check": {
+        "dpi": 72,
+        "all_page_rasters_byte_equal": true,
+        "all_page_extracted_text_equal": true,
+        "all_page_font_resource_counts_equal": true,
+        "checked_pages": 8
+      }
+    }
+  ]
+}

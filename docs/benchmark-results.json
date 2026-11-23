@@ -1,0 +1,932 @@
+{
+  "date": "2026-11-15",
+  "version": "0.1.1",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.7.1-arm64-arm-64bit",
+    "workers": 1,
+    "engine": "vision"
+  },
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "fixture": "columns",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 1.0046316247899085,
+        "seconds_per_page": 1.004631832940504,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.017764792079105973,
+        "peak_rss_mb": 291.1875,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9652389707600401,
+          "mean_absolute_pixel_error": 0.009710161227338835,
+          "changed_pixel_fraction": 0.02047148068913486,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 3.522202279943182,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 18,
+        "editable_characters": 647,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "formula",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6550515829585493,
+        "seconds_per_page": 0.6550517498981208,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.009976958157494664,
+        "peak_rss_mb": 388.5625,
+        "memory_measurement": "sampled50ms process only; children unavailable; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9970852606349038,
+          "mean_absolute_pixel_error": 0.0009606280735095017,
+          "changed_pixel_fraction": 0.002394609286991391,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 3,
+          "mean_block_displacement_pt": 3.2007113454322638,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 3,
+        "editable_characters": 58,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "headers",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.8342089578509331,
+        "seconds_per_page": 0.2780701943362753,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.01404112484306097,
+        "peak_rss_mb": 300.65625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 3,
+        "rendered_pages": 3,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9915658106051849,
+          "mean_absolute_pixel_error": 0.0019452494564522447,
+          "changed_pixel_fraction": 0.003964489091454025,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 4,
+          "mean_block_displacement_pt": 6.824101875290504,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        },
+        {
+          "page": 2,
+          "ssim": 0.9915580741339032,
+          "mean_absolute_pixel_error": 0.001961959661653808,
+          "changed_pixel_fraction": 0.004002728428363253,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 4,
+          "mean_block_displacement_pt": 6.824101875290504,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        },
+        {
+          "page": 3,
+          "ssim": 0.9915707086414159,
+          "mean_absolute_pixel_error": 0.0019608410546599606,
+          "changed_pixel_fraction": 0.004009962897508242,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 4,
+          "mean_block_displacement_pt": 6.824101875290504,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 8,
+        "editable_characters": 182,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "image",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.8507292089052498,
+        "seconds_per_page": 0.850729291792959,
+        "ocr_seconds": 0.13941654097288847,
+        "reconstruction_seconds": 0.011697916081175208,
+        "peak_rss_mb": 405.359375,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9704935337692762,
+          "mean_absolute_pixel_error": 0.007590960277495592,
+          "changed_pixel_fraction": 0.014806891348608398,
+          "alignment_shift_px": [
+            -4,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 2,
+          "mean_block_displacement_pt": 3.7171239709115826,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 3,
+        "editable_characters": 46,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 1,
+        "expected_images": 1,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "landscape",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6682262078393251,
+        "seconds_per_page": 0.6682262909598649,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.011626000050455332,
+        "peak_rss_mb": 398.6875,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9943830868133874,
+          "mean_absolute_pixel_error": 0.0018306246629740477,
+          "changed_pixel_fraction": 0.0040771401109974265,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            842.0,
+            595.0
+          ],
+          "rendered_size_pt": [
+            841.8897705078125,
+            595.303955078125
+          ],
+          "matched_text_blocks": 2,
+          "mean_block_displacement_pt": 3.4025443732505534,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 2,
+        "editable_characters": 76,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "lists",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6516023338772357,
+        "seconds_per_page": 0.6516024169977754,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.014352125115692616,
+        "peak_rss_mb": 403.359375,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9823959067357991,
+          "mean_absolute_pixel_error": 0.00409277223844405,
+          "changed_pixel_fraction": 0.006927520954123131,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 3,
+          "mean_block_displacement_pt": 14.943700336984222,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 6,
+        "editable_characters": 104,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "merged_table",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6609983339440078,
+        "seconds_per_page": 0.6609983751550317,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.01387670892290771,
+        "peak_rss_mb": 408.484375,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9617717471240232,
+          "mean_absolute_pixel_error": 0.004983929143542203,
+          "changed_pixel_fraction": 0.011174154342231731,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 4,
+          "mean_block_displacement_pt": 7.916384644237418,
+          "original_detected_tables": 1,
+          "rendered_detected_tables": 1,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 2,
+        "editable_characters": 57,
+        "native_word_tables": 1,
+        "expected_tables": 1,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "mixed",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.8723451250698417,
+        "seconds_per_page": 0.8723452091217041,
+        "ocr_seconds": 0.18983904109336436,
+        "reconstruction_seconds": 0.011043957900255919,
+        "peak_rss_mb": 417.96875,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9883657380318721,
+          "mean_absolute_pixel_error": 0.003750729779608078,
+          "changed_pixel_fraction": 0.006151365764425014,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 3.122359771537213,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 2,
+        "editable_characters": 49,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "native",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6495606249663979,
+        "seconds_per_page": 0.6495606671087444,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.010425124783068895,
+        "peak_rss_mb": 430.75,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9918733446276221,
+          "mean_absolute_pixel_error": 0.0028127291801806347,
+          "changed_pixel_fraction": 0.006647443648652838,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 5,
+          "mean_block_displacement_pt": 2.6107774154454084,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 5,
+        "editable_characters": 168,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "page_sizes",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.7765651249792427,
+        "seconds_per_page": 0.25885505562958616,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.01079954206943512,
+        "peak_rss_mb": 430.765625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 3,
+        "rendered_pages": 3,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9982402410847993,
+          "mean_absolute_pixel_error": 0.0006020618439709413,
+          "changed_pixel_fraction": 0.0013755826331400696,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 3.512166055572947,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        },
+        {
+          "page": 2,
+          "ssim": 0.9981387844219208,
+          "mean_absolute_pixel_error": 0.0006489258029196859,
+          "changed_pixel_fraction": 0.0014344918818921238,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            842.0,
+            595.0
+          ],
+          "rendered_size_pt": [
+            841.8897705078125,
+            595.303955078125
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 3.512379592020118,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        },
+        {
+          "page": 3,
+          "ssim": 0.996346901453207,
+          "mean_absolute_pixel_error": 0.0012777528231481094,
+          "changed_pixel_fraction": 0.0028821785294263803,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            420.0,
+            595.0
+          ],
+          "rendered_size_pt": [
+            419.555908203125,
+            595.303955078125
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 3.512379592020118,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 5,
+        "editable_characters": 59,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "rotated_crop",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.665686042048037,
+        "seconds_per_page": 0.6656861249357462,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.009973541833460331,
+        "peak_rss_mb": 457.765625,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9892778243397883,
+          "mean_absolute_pixel_error": 0.002533950459472132,
+          "changed_pixel_fraction": 0.003681502099091935,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            800.0,
+            560.0
+          ],
+          "rendered_size_pt": [
+            799.9937133789062,
+            560.0125732421875
+          ],
+          "matched_text_blocks": 1,
+          "mean_block_displacement_pt": 27.778409229174613,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 1,
+        "editable_characters": 26,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "scan_en",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.9112173328176141,
+        "seconds_per_page": 0.9112174159381539,
+        "ocr_seconds": 0.20001404196955264,
+        "reconstruction_seconds": 0.010660333093255758,
+        "peak_rss_mb": 470.296875,
+        "memory_measurement": "sampled50ms process only; children unavailable; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9797045148222902,
+          "mean_absolute_pixel_error": 0.006031014189489188,
+          "changed_pixel_fraction": 0.009138168025713371,
+          "alignment_shift_px": [
+            4,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 0,
+          "mean_block_displacement_pt": null,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 3,
+        "editable_characters": 57,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "scan_it",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.9148014581296593,
+        "seconds_per_page": 0.9148015421815217,
+        "ocr_seconds": 0.21402587508782744,
+        "reconstruction_seconds": 0.01106316689401865,
+        "peak_rss_mb": 470.453125,
+        "memory_measurement": "sampled50ms process+children; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9784917661770592,
+          "mean_absolute_pixel_error": 0.006415705566427524,
+          "changed_pixel_fraction": 0.009712791574943933,
+          "alignment_shift_px": [
+            4,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 0,
+          "mean_block_displacement_pt": null,
+          "original_detected_tables": 0,
+          "rendered_detected_tables": 0,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 3,
+        "editable_characters": 64,
+        "native_word_tables": 0,
+        "expected_tables": 0,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    },
+    {
+      "fixture": "table",
+      "status": "ok",
+      "performance": {
+        "total_seconds": 0.6676850831136107,
+        "seconds_per_page": 0.6676852079108357,
+        "ocr_seconds": 0.0,
+        "reconstruction_seconds": 0.011761334026232362,
+        "peak_rss_mb": 355.453125,
+        "memory_measurement": "sampled50ms process only; children unavailable; external model-server memory excluded",
+        "cache_pages_reused": 0
+      },
+      "visual": {
+        "status": "measured",
+        "original_pages": 1,
+        "rendered_pages": 1,
+        "page_count_difference": 0,
+        "normalization": "100dpi, common white canvas, bounded translation <=4px; no stretching",
+        "note": "SSIM misura aspetto visivo, non precisione OCR. Matching geometrico testuale euristico."
+      },
+      "pages": [
+        {
+          "page": 1,
+          "ssim": 0.9580664864107207,
+          "mean_absolute_pixel_error": 0.005977779034184184,
+          "changed_pixel_fraction": 0.012839115741171364,
+          "alignment_shift_px": [
+            0,
+            0
+          ],
+          "original_size_pt": [
+            595.0,
+            842.0
+          ],
+          "rendered_size_pt": [
+            595.303955078125,
+            841.8897705078125
+          ],
+          "matched_text_blocks": 4,
+          "mean_block_displacement_pt": 7.918893700329976,
+          "original_detected_tables": 1,
+          "rendered_detected_tables": 1,
+          "table_detection_changed": false
+        }
+      ],
+      "structural": {
+        "docx_package_opened": true,
+        "paragraphs": 2,
+        "editable_characters": 74,
+        "native_word_tables": 1,
+        "expected_tables": 1,
+        "table_count_difference": 0,
+        "picture_count": 0,
+        "expected_images": 0,
+        "missing_images": 0,
+        "mode": "editable",
+        "font_availability": "unverified on target Word/LibreOffice installations"
+      }
+    }
+  ]
+}

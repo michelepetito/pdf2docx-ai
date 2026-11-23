@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PDF2DOCX AI Fidelity</title>
+  <link rel="stylesheet" href="/static/app.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="PDF2DOCX AI Fidelity, pagina iniziale"><span class="brand-mark" aria-hidden="true">P<span>W</span></span><span>PDF2DOCX <b>AI Fidelity</b></span></a>
+    <span class="local-badge"><i aria-hidden="true"></i> Tutto sul tuo dispositivo</span>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">DAL DOCUMENTO AL LAVORO</p>
+      <h1>Il tuo PDF.<br><span>Pronto da modificare.</span></h1>
+      <p class="description">Ricostruisci testo, tabelle e immagini in un documento Word. Analisi e OCR rimangono sul tuo computer.</p>
+    </section>
+    <div class="workspace">
+      <section class="card controls" aria-labelledby="convert-title">
+        <div class="section-heading"><span class="step">01</span><div><h2 id="convert-title">Prepara la conversione</h2><p>Un documento alla volta, con le opzioni giuste.</p></div></div>
+        <form id="convert-form">
+          <label class="dropzone" id="dropzone" for="file">
+            <span class="upload-icon" aria-hidden="true">↥</span>
+            <strong id="file-label">Scegli un PDF</strong>
+            <span id="file-description">oppure trascinalo qui</span>
+            <input id="file" name="file" type="file" accept="application/pdf,.pdf" required>
+          </label>
+          <p id="limits" class="help">PDF nativi, scannerizzati e misti</p>
+          <div class="field"><label for="mode">Risultato Word</label><select id="mode" name="mode"><option value="editable">Modificabile — testo e tabelle Word</option><option value="visual">Visivo — pagine come immagini</option></select><p id="mode-note" class="help">La struttura resta modificabile; Word può ricalcolare l'impaginazione.</p></div>
+          <div class="fields-row"><div class="field"><label for="engine">Motore OCR</label><select id="engine" name="engine"><option value="auto">Automatico</option><option value="xiaomi">Xiaomi OCR 0</option><option value="minicpm">MiniCPM OCR 1.0</option><option value="vision">Apple Vision</option><option value="tesseract">Tesseract</option></select></div><div class="field"><label for="language">Lingua</label><select id="language" name="language"><option value="it">Italiano</option><option value="en">Inglese</option><option value="it+en">Italiano + inglese</option></select></div></div>
+          <div class="engine-status"><p id="engine-status" class="help" role="status" aria-live="polite">Verifica dei motori locali in corso…</p><button type="button" id="refresh-engines">Ricontrolla motori</button></div>
+          <details class="advanced"><summary>Verifica e formati aggiuntivi</summary><label class="checkbox"><input type="checkbox" id="validate_visual" name="validate_visual"><span>Confronto visivo con il PDF originale<small>Richiede LibreOffice o un renderer compatibile disponibile localmente.</small></span></label><label class="checkbox"><input type="checkbox" id="searchable_pdf" name="searchable_pdf"><span>Genera anche un PDF ricercabile<small>Il livello di testo dipende dalle coordinate disponibili nell'OCR.</small></span></label></details>
+          <button class="primary" type="submit" id="submit">Converti documento <span aria-hidden="true">→</span></button>
+          <p class="privacy-note">Nessun account. Nessun invio di documenti al cloud. I modelli OCR devono essere installati localmente.</p>
+        </form>
+      </section>
+      <section class="card preview-card" aria-labelledby="preview-title">
+        <div class="section-heading"><span class="step">02</span><div><h2 id="preview-title">Controlla il risultato</h2><p id="preview-caption">Anteprima e qualità, nello stesso spazio.</p></div></div>
+        <div class="tabs" role="tablist" aria-label="Anteprime"><button id="tab-source" type="button" role="tab" aria-selected="true" aria-controls="panel-source">Originale</button><button id="tab-report" type="button" role="tab" aria-selected="false" aria-controls="panel-report" disabled>Rapporto qualità</button></div>
+        <div class="preview-area" id="panel-source" role="tabpanel" aria-labelledby="tab-source"><div class="empty-state" id="empty-state"><div class="paper-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Qui prende forma il tuo documento</h3><p>Seleziona un PDF e avvia la conversione.<br>Il rapporto mostrerà metriche e limiti rilevati.</p></div><iframe id="source-preview" title="Anteprima del PDF originale" hidden></iframe></div>
+        <div class="preview-area" id="panel-report" role="tabpanel" aria-labelledby="tab-report" hidden><iframe id="report-preview" title="Rapporto di qualità e confronto" sandbox="allow-same-origin" hidden></iframe></div>
+        <div id="progress-section" class="progress-section" hidden><div class="progress-label"><strong id="progress-message">In attesa</strong><span id="progress-value">0%</span></div><progress id="progress" max="1" value="0" aria-label="Avanzamento conversione"></progress><p id="progress-detail" class="help">Puoi mantenere aperta questa pagina durante l'elaborazione.</p></div>
+        <div id="error" class="error" role="alert" hidden></div>
+        <div id="downloads" class="downloads" hidden><a id="download-docx" class="primary" download>Scarica Word <span aria-hidden="true">↓</span></a><div class="download-links"><a id="download-report" download>Rapporto HTML</a><a id="download-json" download>Metriche JSON</a><a id="download-model" download>Struttura JSON</a><a id="download-searchable" download hidden>PDF ricercabile</a></div></div>
+      </section>
+    </div>
+    <footer><span>PDF2DOCX AI Fidelity</span><p>La fedeltà dipende dal PDF e dai backend disponibili. Le parti rasterizzate sono indicate nel rapporto.</p></footer>
+  </main>
+  <div id="announcements" class="sr-only" role="status" aria-live="polite"></div>
+</body>
+</html>
